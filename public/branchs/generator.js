@@ -3,15 +3,38 @@ let autoInit = async()=>{
 
 let tabListContent = ''
 let BranchContent = ''
-const citySet = new Set()
-Object.values(branchList).map(item => citySet.add(cityNameMap[item.city]))
+
 // Convert the Set to an array and sort it
-const sortedCities = [...citySet].sort()
+const citiesList = counties = [
+  '基隆市',
+  '臺北市',
+  '新北市',
+  '桃園市',
+  '新竹市',
+  '新竹縣',
+  '苗栗縣',
+  '臺中市',
+  '彰化縣',
+  '南投縣',
+  '雲林縣',
+  '嘉義市',
+  '嘉義縣',
+  '臺南市',
+  '高雄市',
+  '屏東縣',
+  '宜蘭縣',
+  '花蓮縣',
+  '臺東縣',
+  '澎湖縣',
+  '金門縣',
+  '連江縣'
+]
 
+  let chapterExistCountyCount = 0
 
-  for(let i=0;i < sortedCities.length;i++){
+  for(let i=0;i < citiesList.length;i++){
 
-    const chapteList = Object.values(branchList).filter(item => cityNameMap[item.city] === sortedCities[i])
+    const chapteList = Object.values(branchList).filter(item => shcoolCountyMapping[chapterNameMap[item['title']]] === citiesList[i])
 
     console.log(chapteList.length)
 
@@ -20,9 +43,9 @@ const sortedCities = [...citySet].sort()
     }
 
     tabListContent+=`<li class="nav-item p-0 text-center" style="margin:5px 5px;">
-        <a class="nav-link ${i===0?'active':""}" data-toggle="tab" href="#${sortedCities[i]}"
+        <a class="nav-link ${chapterExistCountyCount===0?'active':""}" data-toggle="tab" href="#${citiesList[i]}"
             role="tablist" style="margin-bottom: 10px;">
-            ${sortedCities[i]}
+            ${citiesList[i]}
         </a>
     </li>`
     
@@ -62,13 +85,15 @@ const sortedCities = [...citySet].sort()
 
     }
 
-    BranchContent+=`<div class="tab-pane fade ${i===0?'active':""} show" id="${sortedCities[i]}">
+    BranchContent+=`<div class="tab-pane fade ${chapterExistCountyCount===0?'active':""} show" id="${citiesList[i]}">
                       <div class="row">
                         <div class="col-lg-9">
                           ${organizationInfo}      
                         </div>
                       </div>                
                     </div>`
+
+    chapterExistCountyCount++
 
   }
 
