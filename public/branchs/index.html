@@ -1,0 +1,296 @@
+<!--
+=========================================================
+* Argon Design System - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        近期活動 | GDSC Taiwan
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Animate.css v4.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <!-- Font Awesome Icons -->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="../assets/css/argon-design-system.css?v=1.2.0" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style type="text/css">
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #4285F4;
+        }
+
+        .nav-pills .nav-link:hover {
+            color: #212832;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+            color: #fff;
+            text-decoration: none;
+            background-color: #4285F4;
+        }
+
+        .nav-pills .nav-link {
+            color: #4285F4;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+</head>
+
+<body class="profile-page">
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-white bg-white">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="../">
+                <img class="card-img-icon" src="../assets/img/gdg.png"
+                    alt="Card image cap"> </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+                aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: auto;
+                        margin-right: auto;">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="../">
+                            <i class="ni ni-building"></i>
+                            <span class="nav-link-inner--text">首頁</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon " href="../team/">
+                            <i class="ni ni-circle-08"></i>
+                            <span class="nav-link-inner--text">組織成員</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon " href="../activity/">
+                            <i class="ni ni-compass-04"></i>
+                            <span class="nav-link-inner--text">近期活動</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="../annual_activity/">
+                            <i class="ni ni-calendar-grid-58"></i>
+                            <span class="nav-link-inner--text">年度活動</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="../partners/">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span class="nav-link-inner--text">合作夥伴</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon active" href=".">
+                            <i class="ni ni-square-pin"></i>
+                            <span class="nav-link-inner--text">其他城市</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <section class="section section-hero section-shaped" style="padding-bottom: 0px !important;">
+            <!-- Circles background -->
+
+            <div class="page-header">
+                <div class="container shape-container d-flex justify-content-center py-lg"
+                    style="padding-bottom: 0px !important;">
+                    <div class="col-lg-6 text-center">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-10 text-center">
+                                <h3 class="text-white display-1" style="color: #4285F4 !important;;">其他城市</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="section primary">
+        <div class="container">
+            <div class="nav-wrapper mt--200">
+                <div class="container">
+                    <div class="col-lg-12" id="app">
+                        
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="nav-wrapper">
+                                            <ul class="nav nav-pills nav-pills-primary flex-column" role="tablist" id='tablist'>
+                                                <!-- 由JS自動讀檔生成 -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="card card-plain">
+                                            <div class="tab-content mt-2" id="BranchContent">
+                                                <!-- 由JS自動讀檔生成 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-grid align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h3 class="font-weight-light mb-2" style="color: #4285F4;"><br>免責聲明</h3>
+                    <p>GDSC Taiwan 是一個獨立的團體，我們的活動和意見表達與 Google 公司無任何關聯。如欲了解 GDG 計畫的更多資訊，請參閱 <a
+                            href="https://developers.google.com/community/gdg/" target="_blank"
+                            style="color: #4285F4;">https://developers.google.com/community/gdg/</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <a target="_blank" href="mailto:organizer@gdg-taipei.org">
+                        <button rel="nofollow" class="btn btn-icon-only btn-github rounded-circle" data-toggle="tooltip"
+                            data-original-title="寄信聯絡">
+                            <span class="iconify" data-icon="il-email" data-inline="false"></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@GDGTaipei">
+                        <button target="_blank" rel="nofollow" class="btn btn-icon-only btn-youtube rounded-circle"
+                            data-toggle="tooltip" data-original-title="Youtube 頻道"
+                            style="background-color: #FF0000; border-color: #FF0000;">
+                            <span class="btn-inner--icon"><i class="fab fa-youtube"></i></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://facebook.com/gdg.taipei/">
+                        <button target=" _blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-facebook"
+                            data-toggle="tooltip" data-original-title="加入官方帳號">
+                            <span class="btn-inner--icon"><span class="fab fa-facebook" data-icon="cib:meetup"
+                                    data-inline="false"></span></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/groups/gdg.taipei.group">
+                        <button target=" _blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-facebook"
+                            data-toggle="tooltip" data-original-title="加入官方FB社團">
+                            <span class="btn-inner--icon"><span class="fab fa-facebook" data-icon="cib:meetup"
+                                    data-inline="false"></span></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/taipei_gtug">
+                        <button target="_blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-twitter"
+                            data-toggle="tooltip" data-original-title="加入Twitter">
+                            <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://plurk.com/taipei_gtug">
+                        <button target="_blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-twitter"
+                            data-toggle="tooltip" data-original-title="加入Plurk"
+                            style="background-color: #666; border-color: #666;">
+                            <span class="btn-inner--icon"><span class="iconify" data-icon="cib:plurk"
+                                    data-inline="false"></span></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://plurk.com/taipei_gtug">
+                        <button target="_blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-twitter"
+                            data-toggle="tooltip" data-original-title="加入LinkedIn"
+                            style="background-color: #0077b5; border-color: #0077b5;">
+                            <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://t.me/gdgtaipei">
+                        <button target="_blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-twitter"
+                            data-toggle="tooltip" data-original-title="加入Telegram"
+                            style="background-color: #0088cc; border-color: #0088cc;">
+                            <span class="btn-inner--icon"><i class="fab fa-telegram"></i></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="http://line.me/ti/p/@gdgtaipei">
+                        <button target="_blank" rel="nofollow" class="btn-icon-only rounded-circle btn btn-twitter"
+                            data-toggle="tooltip" data-original-title="加入LINE"
+                            style="background-color: #06C755; border-color: #06C755;">
+                            <span class="btn-inner--icon"><i class="fab fa-line"></i></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-md-6">
+                    <div class="copyright" style="margin-bottom: 2rem; border-bottom: 2rem">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> <a href="" target="_self" style="color: #4285F4;">GDSC Taiwan</a> • <a href="../code_of_conduct/" target="_blank" style="color: #4285F4;">行為準則</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/moment.min.js"></script>
+    <script src="../assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
+
+    <script src="./branchList.js"></script>
+    <script src="./generator.js"></script>
+</body>
+
+</html>
