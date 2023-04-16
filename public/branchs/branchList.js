@@ -1,77 +1,580 @@
-let branchList = {
-  "Taipei": {
-    "city": "臺北",
-    "organization": [
-      {
-        "name": "GDSC Taiwan (Google Developer Group Taipei) 是以研究 Google 相關技術為主的開發者社群，於週三晚上聚會，由與會者提供數個 Lightening Talk，並不定期邀請講者分享特定主題、舉辦 Hackthon 或 Workshop 等活動。目前因為 COVID19 疫情關係，活動主要以線上聚會為主；一旦線下活動恢復，聚會地點會在台北地區。若沒有特別公告，我們每週三會在天瓏資訊 Coding Space 聚會。",
-        "pic_url": "../assets/img/branch/GDSC Taiwan.png",
-        "link": "../"
-      },
-      {
-        "name": "GCPUG(Google Cloud Platform User Group) 在 2014 建立，自2021年11月正式由 GCPUG 更名為 GDG Cloud Taipei。 GDG Cloud Taipei 主要以討論 GCP 技術架構為主",
-        "pic_url": "../assets/img/branch/GDG Cloud Taipei.png",
-        "link": "https://gdg.community.dev/gdg-cloud-taipei/"
-      }
-    ]
+let branchList ={
+  "244": {
+    "chapter_location": "Taoyuan (TW)",
+    "city": "Taoyuan",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 244,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Chang Gung University",
+    "relative_url": "/chang-gung-university/",
+    "url": "https://gdsc.community.dev/chang-gung-university/"
   },
-  "Taoyuan": {
-    "city": "桃園",
-    "organization": [
-      {
-        "name": "GDG Taoyuan (Google Developer Group Taoyuan) is a monthly meetup for developer who are interested in tech related to Google.GDG Taoyuan（GDG 桃園）是以研究 Google 相關技術為主的開發者社群，由與會者提供數個 Lightening Talk，並不定期邀請講者分享特定主題、舉辦 Hackathon 或 Workshop 等活動",
-        "pic_url": "../assets/img/branch/GDG Taoyuan.png",
-        "link": "https://gdg.community.dev/gdg-taoyuan/"
-      }
-    ]
+  "247": {
+    "chapter_location": "Taichung (TW)",
+    "city": "Taichung",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>哈囉～我們是朝陽開源技術社</p><p>只要你對開源軟體有興趣或是想要增加自己的知識量</p><p>我們都非常歡迎你來參加歐～</p><p>社辦：一宿R-1004</p><p>社課地點:資訊大樓Ｍ-211</p><p>有任何疑問歡迎私訊IG粉專！！！</p>",
+    "id": 247,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/GDSC_CYUT_logo_simple-01_ElH3YEG.jpg",
+      "path": "chapter_banners/GDSC_CYUT_logo_simple-01_ElH3YEG.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/GDSC_CYUT_logo_simple-01_ElH3YEG.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Chaoyang University of Technology",
+    "relative_url": "/chaoyang-university-of-technology/",
+    "url": "https://gdsc.community.dev/chaoyang-university-of-technology/"
   },
-  "Taichung": {
-    "city": "臺中",
-    "organization": [
-      {
-        "name": "GDG Taichung (Google Developer Group Taichung) 是以研究 Google 相關技術為主的開發者社群，於每週四晚上聚會，由與會者提供數個 Lightening Talk，並不定期邀請講者分享特定主題、舉辦 Hackthon 或 Workshop 等活動。聚會地點在大台中地區，地點將隨著每次活動發佈。",
-        "pic_url": "../assets/img/branch/GDG Taichung.png",
-        "link": "https://gdg.community.dev/gdg-taichung/"
-      }
-    ]
+  "319": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>北科程式設計研究社 (NTUT Programming Club) 是由一群對寫程式有熱忱的學生所組成的學術社團。</p><p>我們定期籌辦社課及社聚，參與資訊競賽和年會，並舉辦社遊、跨校交流、及黑客松等活動。</p><p>GDSC NTUT is a part of NTUT Programming Club (NPC), which is a university club formed with students that are passionate in programming and computer science. NPC conducts weekly courses and meetups for club members to attend, and also holds&nbsp;intercollegiate activities, hackathons, and more. NPC members also participate in conferences, such as SITCON, COSCUP, etc., and also attend competitions like ACM-ICPC.</p>",
+    "id": 319,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Taipei University of Technology",
+    "relative_url": "/taipei-university-of-technology/",
+    "url": "https://gdsc.community.dev/taipei-university-of-technology/"
   },
-  "Changhua": {
-    "city": "彰化",
-    "organization": [
-      {
-        "name": "作為心目中「提升故鄉彰化的數位化能力」願景裡面很重要的一塊拼圖，彰化市民陳佳新於 2022 年 3 月 8 日遞件向 Google 申請成立 GDG Changhua ，這是 Google 以城市名稱為基礎的開發者社群（ Google Developer Group, GDG ），落腳在地，專門討論 Google 技術。",
-        "pic_url": "../assets/img/branch/GDG Changhua.png",
-        "link": "https://gdg.community.dev/gdg-changhua/"
-      }
-    ]
+  "340": {
+    "chapter_location": "Taichung (TW)",
+    "city": "Taichung",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>我們是中山醫學大學的 Google developer student clubs! 我們希望提倡開源運動與利用電腦解決生活各種事物的風氣，歡迎有興趣的朋友加入我們！ </p>",
+    "id": 340,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Chung Shan Medical University",
+    "relative_url": "/chung-shan-medical-university/",
+    "url": "https://gdsc.community.dev/chung-shan-medical-university/"
   },
-  "Tainan": {
-    "city": "臺南",
-    "organization": [
-      {
-        "name": "",
-        "pic_url": "../assets/img/branch/GDG Tainan.png",
-        "link": "https://gdg.community.dev/gdg-tainan/"
-      }
-    ]
+  "354": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 354,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/118906550_112365360599798_663298188729706905_n.png",
+      "path": "chapter_banners/118906550_112365360599798_663298188729706905_n.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/118906550_112365360599798_663298188729706905_n.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taiwan Normal University",
+    "relative_url": "/national-taiwan-normal-university/",
+    "url": "https://gdsc.community.dev/national-taiwan-normal-university/"
   },
-  "Kaohsiung": {
-    "city": "高雄",
-    "organization": [
-      {
-        "name": "GDG Kaohsiung 全名 Google Developer Group Kaohsiung 是以研究 Google 以及 Android App 領域的技術、設計、新創或相關產業為主的開發者社群；目標每個月會有一場實體聚會在高雄舉行。GDG Kaoshiung 前身是 Android 高雄開發者社群，自從2014年三月開始舉辦，每月有一到兩場的實體聚會，舉行時間原則上依講者和場地許可時間安排，實際活動時間請持續關注臉書社團，我們會隨時公佈最新的活動訊息，歡迎對相關領域有興趣的朋友可以參與聚會，一起交流討論。",
-        "pic_url": "../assets/img/branch/GDG Kaohsiung.png",
-        "link": "https://gdg.community.dev/gdg-kaohsiung/"
-      }
-    ]
+  "373": {
+    "chapter_location": "Taoyuan (TW)",
+    "city": "Taoyuan",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 373,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Ming Chuan University",
+    "relative_url": "/ming-chuan-university/",
+    "url": "https://gdsc.community.dev/ming-chuan-university/"
   },
-  "Hualien": {
-    "city": "花蓮",
-    "organization": [
-      {
-        "name": "GDG 花蓮是2019 年初成立的Google 技術開發者社群，舉行各類聚會，包含演講、自由交流、 workshop, study jam, 及年會Devfest。",
-        "pic_url": "../assets/img/branch/GDG Hualien.png",
-        "link": "https://gdg.community.dev/gdg-hualien/"
-      }
-    ]
+  "413": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>Aimed to impact, we are students in NCCU who learn and advocate technologies by making cool side projects. </p>",
+    "id": 413,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/Frame%2520320.jpg",
+      "path": "chapter_banners/Frame 320.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/Frame%2520320.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Chengchi University",
+    "relative_url": "/national-chengchi-university/",
+    "url": "https://gdsc.community.dev/national-chengchi-university/"
+  },
+  "421": {
+    "chapter_location": "Changhua City (TW)",
+    "city": "Changhua City",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 421,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Changhua University of Education",
+    "relative_url": "/national-changhua-university-of-education/",
+    "url": "https://gdsc.community.dev/national-changhua-university-of-education/"
+  },
+  "428": {
+    "chapter_location": "Taichung (TW)",
+    "city": "Taichung",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 428,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taichung University of Science and Technology",
+    "relative_url": "/national-taichung-university-of-science-and-technology/",
+    "url": "https://gdsc.community.dev/national-taichung-university-of-science-and-technology/"
+  },
+  "454": {
+    "chapter_location": "Minxiong (TW)",
+    "city": "Minxiong",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "GDSC CCU<p><br></p>",
+    "id": 454,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Chung Cheng University",
+    "relative_url": "/national-chung-cheng-university/",
+    "url": "https://gdsc.community.dev/national-chung-cheng-university/"
+  },
+  "545": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<h2><b>關於我們</b></h2><p>我們是一群熱愛推廣資訊的學生</p><p>希望在國立臺北教育大學中，能夠營造研討資訊的風氣</p><p>舉辦不管是資訊或非資訊科系都能參與的活動，</p><p>讓<b>國北教大的全校師生</b>都能學習到最嶄新、最熱門的技術!</p>",
+    "id": 545,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taipei University of Education",
+    "relative_url": "/national-taipei-university-of-education/",
+    "url": "https://gdsc.community.dev/national-taipei-university-of-education/"
+  },
+  "547": {
+    "chapter_location": "Taoyuan (TW)",
+    "city": "Taoyuan",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>Google Developer Student Club @ National Central University, Taiwan<br>學習並推廣 Google 的資訊相關技術</p>",
+    "id": 547,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/ncuicon.png",
+      "path": "chapter_banners/ncuicon.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/ncuicon.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Central University",
+    "relative_url": "/national-central-university/",
+    "url": "https://gdsc.community.dev/national-central-university/"
+  },
+  "622": {
+    "chapter_location": "Hualien (TW)",
+    "city": "Hualien",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>■ 國立東華大學, 臺灣<br>■ National Dong Hwa University, Taiwan (R.O.C.)<br>■ <a href=\"https://dscndhu.blogspot.com\">dscndhu.blogspot.com</a><br></p><p><br></p><p>大家好 !!<br>我們是 Google Developer Student Clubs - National Dong Hwa University !!<br>叫我們 GDSC NDHU 就可以啦 ~</p><p>Google Developer Student Clubs 是由 Google Developers 官方所支持的學生開發者社群，我們在 2020 年正式進軍 國立東華大學 校園內啦 ~</p><p>我們會與全球上千個校園內的 GDSC 社群，一起學習 Google 所提倡的最新開發技術。 未來我們將持續與各界合作，透過 Google 提供的第一手技術學習資源，舉辦涵蓋各種技術主題的工作坊、講座、專案製作等等。歡迎所有同學們踴躍參加囉 ヾ(•ω•`)o</p><p>PS.就算沒有程式基礎的同學，也會有專屬你的活動喔 (ゝ∀･)b</p><p><br></p><p>WEBSITE<br><a href=\"https://dscndhu.blogspot.com\" style=\"background-color: rgb(255, 255, 255);\">dscndhu.blogspot.com</a></p>",
+    "id": 622,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/Chapter-Icon_CaxTeX7.png",
+      "path": "chapter_banners/Chapter-Icon_CaxTeX7.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/Chapter-Icon_CaxTeX7.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Dong Hwa University (Hualien University of Education)",
+    "relative_url": "/national-dong-hwa-university-hualien-university-of-education/",
+    "url": "https://gdsc.community.dev/national-dong-hwa-university-hualien-university-of-education/"
+  },
+  "661": {
+    "chapter_location": "Hsinchu (TW)",
+    "city": "Hsinchu",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>Hi! We're students from NCTU who liked to develop the tools to benefit the world! We focus on Android, firebase and AI. We aim to shared the knowledge of these tools to more people and also use these tools to develop more outstanding things to improve our world!</p>",
+    "id": 661,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Chiao Tung University",
+    "relative_url": "/national-chiao-tung-university/",
+    "url": "https://gdsc.community.dev/national-chiao-tung-university/"
+  },
+  "1147": {
+    "chapter_location": "Taoyuan (TW)",
+    "city": "Taoyuan",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 1147,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Chung Hsing University",
+    "relative_url": "/national-chung-hsing-university/",
+    "url": "https://gdsc.community.dev/national-chung-hsing-university/"
+  },
+  "1700": {
+    "chapter_location": "West District (TW)",
+    "city": "West District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 1700,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taichung University of Education",
+    "relative_url": "/national-taichung-university-of-education/",
+    "url": "https://gdsc.community.dev/national-taichung-university-of-education/"
+  },
+  "1736": {
+    "chapter_location": "Huwei Township (TW)",
+    "city": "Huwei Township",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "",
+    "id": 1736,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Formosa University",
+    "relative_url": "/national-formosa-university/",
+    "url": "https://gdsc.community.dev/national-formosa-university/"
+  },
+  "1820": {
+    "chapter_location": "Xinyi District (TW)",
+    "city": "Xinyi District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>We are Google Developer Student Club @TMU ! If you want to learn, grow, share and find solutions to big problems, this is the right place.</p>",
+    "id": 1820,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/Copy%2520of%2520dsc-ecosystem-profilepicture-linkedin_KYjAziA.png",
+      "path": "chapter_banners/Copy of dsc-ecosystem-profilepicture-linkedin_KYjAziA.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/Copy%2520of%2520dsc-ecosystem-profilepicture-linkedin_KYjAziA.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Taipei Medical University",
+    "relative_url": "/taipei-medical-university/",
+    "url": "https://gdsc.community.dev/taipei-medical-university/"
+  },
+  "1821": {
+    "chapter_location": "Tamsui District (TW)",
+    "city": "Tamsui District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>TKUAIIC x GDSC TKU is the first and only AI club at Tamkang University, which is also one of the few technology clubs there. We strive to promote technology through diverse courses, making us the club with the most number of courses as well as most types of courses. This year we have 7 types of courses:</p><p>1. Talks / Workshops<br>2. Projects / Study Jam<br>3. Side Projects<br>4. Training Courses<br>5. Hackathon<br>6. Year-End Show (Immersive Projection Exhibition)<br>7. Field Trip</p><p>Join us as we take your college life to a whole new level!</p><p><br></p>",
+    "id": 1821,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/New%2520Logo.png",
+      "path": "chapter_banners/New Logo.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/New%2520Logo.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Tamkang University",
+    "relative_url": "/tamkang-university/",
+    "url": "https://gdsc.community.dev/tamkang-university/"
+  },
+  "1823": {
+    "chapter_location": "Xinzhuang District (TW)",
+    "city": "Xinzhuang District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>2021年加入GDSC 專案，GDSC FJU將帶來許多培養軟實力的活動，並為學生族群帶來許多有趣的資訊科技資源，期待能讓每位夥伴引進不同的Google以及GDSC資源，豐富自己的技能與眼界！</p><p>Joined the GDSC project from 2021, GDSC FJU planned to hold more soft-skill-building events and bring some interesting coding or programming recourse for more students! Diggin more Google Tech with us now!!</p>",
+    "id": 1823,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/iOS%2520%25E7%259A%2584%25E5%25BD%25B1%25E5%2583%258F.jpg",
+      "path": "chapter_banners/iOS 的影像.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/iOS%2520%25E7%259A%2584%25E5%25BD%25B1%25E5%2583%258F.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Fu Jen Catholic University",
+    "relative_url": "/fu-jen-catholic-university/",
+    "url": "https://gdsc.community.dev/fu-jen-catholic-university/"
+  },
+  "1828": {
+    "chapter_location": "Gushan District (TW)",
+    "city": "Gushan District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>Google Developer Student Club (GDSC) in NSYSU is a university based community group for students interested in Google developer technologies.</p><p>Learn more about us, please visit:</p><p><span><a href=\"https://sites.google.com/view/gdscnsysu/首頁\">https://sites.google.com/view/gdscnsysu/首頁</a></span></p>",
+    "id": 1828,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/B2961889-6EFC-4CAC-B3EB-085A926FDA38.PNG",
+      "path": "chapter_banners/B2961889-6EFC-4CAC-B3EB-085A926FDA38.PNG",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/B2961889-6EFC-4CAC-B3EB-085A926FDA38.PNG"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Sun Yat-Sen University",
+    "relative_url": "/national-sun-yat-sen-university/",
+    "url": "https://gdsc.community.dev/national-sun-yat-sen-university/"
+  },
+  "1832": {
+    "chapter_location": "Zhongli District (TW)",
+    "city": "Zhongli District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>元智大學第二屆GDSC來啦！點擊join成為正式成員，非元智學生也非常歡迎喔</p><p>我們的主要活動據點在Discord上，歡迎點擊以下連結加入我們！</p><p><a href=\"https://www.instagram.com/gdsc.fju/\"><span>https://discord.gg/smCR5qpAEY</span></a><br></p><p><br></p><ul><li>Facebook:&nbsp;<a href=\"https://www.facebook.com/gdscyzu\">https://www.facebook.com/gdscyzu</a></li><li>Instagram:&nbsp;<a href=\"https://www.instagram.com/gdsc_yzu/\"><span>https://www.instagram.com/gdsc_yzu/</span></a></li></ul>",
+    "id": 1832,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Yuan Ze University",
+    "relative_url": "/yuan-ze-university/",
+    "url": "https://gdsc.community.dev/yuan-ze-university/"
+  },
+  "1837": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>歡迎來到台大Google學生開發者社群</p><p>Welcome to the homepage of NTU GDSC</p><p>Discord server: <a href=\"https://discord.gg/KjXdGd65Ph\"><span>https://discord.gg/KjXdGd65Ph</span></a></p>",
+    "id": 1837,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/gdsc_kTxIhI3.jpg",
+      "path": "chapter_banners/gdsc_kTxIhI3.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/gdsc_kTxIhI3.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taiwan University",
+    "relative_url": "/national-taiwan-university/",
+    "url": "https://gdsc.community.dev/national-taiwan-university/"
+  },
+  "1846": {
+    "chapter_location": "East District (TW)",
+    "city": "East District",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>GDSC NCKU 於2021年創立，期望透過程式與各科系領域做結合，為無程式經驗或有一定基礎的成大學生提供一個友善且溫馨的程式學習環境。</p><p>GDSC NCKU FaceBook：<a href=\"https://www.facebook.com/GdscNCKU\">https://www.facebook.com/GdscNCKU</a></p><p>GDSC NCKU Discord：<a href=\"https://discord.gg/W5Sm8EN38f\">https://discord.gg/W5Sm8EN38f</a></p><p>GDSC NCKU Youtube：<a href=\"https://www.youtube.com/channel/UC97clXYwnMYsomAWvpwweJw\">https://www.youtube.com/channel/UC97clXYwnMYsomAWvpwweJw</a><br></p>",
+    "id": 1846,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Cheng Kung University",
+    "relative_url": "/national-cheng-kung-university/",
+    "url": "https://gdsc.community.dev/national-cheng-kung-university/"
+  },
+  "3153": {
+    "chapter_location": "Douliu City (TW)",
+    "city": "Douliu City",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>NYUST Laboratory</p>",
+    "id": 3153,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/LOGO_hmZvgMt.png",
+      "path": "chapter_banners/LOGO_hmZvgMt.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/LOGO_hmZvgMt.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Yunlin University of Science and Technology",
+    "relative_url": "/national-yunlin-university-of-science-and-technology/",
+    "url": "https://gdsc.community.dev/national-yunlin-university-of-science-and-technology/"
+  },
+  "3154": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "We are Google Developer Student Club from National Taiwan University of Science and Technology ! <div><br></div><div>我們是來自台灣科技大學的Google學生開發者社群!</div><p><br></p><p>Google Developer Student Club 首度登入台科大校園啦！</p><p>對Google組織有興趣的伙伴們千萬不要錯過LA</p><p><br></p><p>大家好，我們是NTUST GDSC。</p><p>我們是一群熱愛技術更愛分享的學生，旨在向大家傳遞知識。</p><p>我們未必人人都是頂尖專家，但我們可以透過管道來幫大家獲取資源。</p><p>我們或許不是最好的老師，但我們可以一起學習最新的知識。</p><p>除了追求盡善盡美，我們更追求活出自己的樣子。</p><p>若是我們能夠讓你感到有興趣，請務必持續追蹤我們即將推出的一系列活動٩(ˊᗜˋ )و</p>",
+    "id": 3154,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/GDSC_NTUST_LOGO.png",
+      "path": "chapter_banners/GDSC_NTUST_LOGO.png",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/GDSC_NTUST_LOGO.png"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taiwan University of Science and Technology",
+    "relative_url": "/national-taiwan-university-of-science-and-technology/",
+    "url": "https://gdsc.community.dev/national-taiwan-university-of-science-and-technology/"
+  },
+  "3155": {
+    "chapter_location": "Taoyuan (TW)",
+    "city": "Taoyuan",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": null,
+    "id": 3155,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Chung Yuan Christian University",
+    "relative_url": "/chung-yuan-christian-university/",
+    "url": "https://gdsc.community.dev/chung-yuan-christian-university/"
+  },
+  "3156": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<ul><li>GDSC 紐約大學 | 立陽明交通大學 Google 學生開發者社群&nbsp;</li><li>GDSC國立陽明交通大學分會成立於2022年，由<a href=\"https://gdsc.community.dev/national-yang-ming-university/\">國立陽明大學</a>和<a href=\"https://gdsc.community.dev/national-chiao-tung-university/\">國立交通大學</a><br>兩分會合併而成&nbsp;。<a href=\"https://gdsc.community.dev/national-yang-ming-university/\"></a><a href=\"https://gdsc.community.dev/national-chiao-tung-university/\"></a><br></li><li>官網：<a href=\"https://www.gdscnycu.com/\"><span>https://www.gdscnycu.com/</span></a><br></li><li>Facebook:&nbsp;<a href=\"https://www.facebook.com/gdscnycu2022\"><span>https://www.facebook.com/gdscnycu2022</span></a></li></ul>",
+    "id": 3156,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/new-logo_xKQoCJK.jpg",
+      "path": "chapter_banners/new-logo_xKQoCJK.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/new-logo_xKQoCJK.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Yang Ming Chiao Tung University",
+    "relative_url": "/national-yang-ming-chiao-tung-university/",
+    "url": "https://gdsc.community.dev/national-yang-ming-chiao-tung-university/"
+  },
+  "3157": {
+    "chapter_location": "Kaohsiung (TW)",
+    "city": "Kaohsiung",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": null,
+    "id": 3157,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Kaohsiung University of Science and Technology",
+    "relative_url": "/national-kaohsiung-university-of-science-and-technology/",
+    "url": "https://gdsc.community.dev/national-kaohsiung-university-of-science-and-technology/"
+  },
+  "3158": {
+    "chapter_location": "Taipei (TW)",
+    "city": "Taipei",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>提供友善的學習環境給所有人！</p><p>小預告：下學期會有參訪＆演講</p>",
+    "id": 3158,
+    "hide_country_info": false,
+    "logo": {
+      "url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/chapter_banners/%25E9%25A0%25AD%25E8%25B2%25BC.jpg",
+      "path": "chapter_banners/頭貼.jpg",
+      "thumbnail_width": 400,
+      "thumbnail_height": 400,
+      "thumbnail_format": "auto",
+      "thumbnail_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fit,dpr_2,f_auto,g_center,h_400,q_auto:good,w_400/v1/gcs/platform-data-dsc/chapter_banners/%25E9%25A0%25AD%25E8%25B2%25BC.jpg"
+    },
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Taipei University of Business",
+    "relative_url": "/national-taipei-university-of-business/",
+    "url": "https://gdsc.community.dev/national-taipei-university-of-business/"
+  },
+  "3159": {
+    "chapter_location": "Yilan City (TW)",
+    "city": "Yilan City",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": "<p>國立宜蘭大學 National Ilan University 🏫</p><p>歡迎加入 NIU Google Developer Student Club</p><p>這裡是一群對技術開發感興趣的人所組成的社群，</p><p>提供一個管道讓大家可以和不同的人交流、學習，</p><p>不論你是甚麼背景、專業，只要學習抱有熱忱，</p><p>我們都非常歡迎， 邀請您一同加入、成長。</p><p>IG：<a href=\"https://www.instagram.com/gdsc.niu/\" style=\"background-color: rgb(255, 255, 255);\"><span>https://www.instagram.com/gdsc.niu/</span></a></p><p>FB：<a href=\"https://www.facebook.com/gdsc.niu\" style=\"background-color: rgb(255, 255, 255);\"><span>https://www.facebook.com/gdsc.niu</span></a></p><p>LinkTree：<a href=\"https://linktr.ee/gdscniu\"><span>https://linktr.ee/gdscniu</span></a><br></p>",
+    "id": 3159,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "National Ilan University",
+    "relative_url": "/national-ilan-university/",
+    "url": "https://gdsc.community.dev/national-ilan-university/"
+  },
+  "3160": {
+    "chapter_location": "Taichung (TW)",
+    "city": "Taichung",
+    "country": "TW",
+    "country_name": "Taiwan",
+    "description": null,
+    "id": 3160,
+    "hide_country_info": false,
+    "logo": {},
+    "state": "",
+    "timezone": "Asia/Taipei",
+    "title": "Feng Chia University",
+    "relative_url": "/feng-chia-university/",
+    "url": "https://gdsc.community.dev/feng-chia-university/"
   }
 }
