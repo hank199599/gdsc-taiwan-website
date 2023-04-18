@@ -33,6 +33,6 @@ var eventList =
         "date":"11 到 12月",
         "description":"GDSC Leads Summit 是 Google Developer Student Clubs（GDSC）每年舉辦的研討會，旨在為全球 GDSC 社群的學生領袖們提供一個交流和學習的平台。該研討會主要針對 GDSC 的社群管理、技術培訓、活動策劃、專案管理等方面進行探討和分享。參加研討會的 GDSC Leads 不僅能夠與來自世界各地的學生領袖交流，還能參加由 Google 工程師和產品經理提供的技術培訓和知識分享。",
         "pic_url":"../assets/img/google_sticker_4.gif",
-        "link":"https://developers.google.com/community/devfest?hl=zh-tw"
+        "link":""
       }
   ]

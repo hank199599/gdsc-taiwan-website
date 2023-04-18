@@ -16,7 +16,7 @@ let eventReader = async () => {
               <span class="badge badge-pill badge-lg badge-success" style="background-color: #4285F4;">${item["date"]}</span>
               <h3>${item["title"]}</h3>
                 <p style="margin-top:10px">${item["description"]}</p>
-                <a href="${item['link']}" class="btn btn-outline-default btn-round" target="_blank" style="margin: 5px 5px;">了解更多</a>
+                ${item['link']?`<a href="${item['link']}" class="btn btn-outline-default btn-round" target="_blank" style="margin: 5px 5px;">了解更多</a>`:''}
               </div>
             </div>
           </div>
