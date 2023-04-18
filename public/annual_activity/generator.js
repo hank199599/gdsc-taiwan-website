@@ -13,6 +13,7 @@ let eventReader = async () => {
                 <img src="${item['pic_url']}" alt="${item["title"]} image" class="img-fluid shadow" style="width: 300px;">
               </div>
               <div class="col-md-7 text-left" style="vertical-align: center;">
+              <span class="badge badge-pill badge-lg badge-success" style="background-color: #4285F4;">${item["date"]}</span>
               <h3>${item["title"]}</h3>
                 <p style="margin-top:10px">${item["description"]}</p>
                 <a href="${item['link']}" class="btn btn-outline-default btn-round" target="_blank" style="margin: 5px 5px;">了解更多</a>
